@@ -36,7 +36,7 @@ namespace WindowsFormsApp2
                 label2.Text = result.ToString();
             }catch(Exception ex)
             {
-                label2.Text = "one of entry is not a String Please Enter Only String";
+                label2.Text =ex.Message;
             }
         }
     }
