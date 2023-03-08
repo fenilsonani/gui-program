@@ -45,8 +45,8 @@ You can add new Forms to a program by dragging the Form control from the Toolbox
 Question:-
 ### List out the input controls. Explain any three in brief and list at least three properties of each control.
 Answer:-
-The following are the input controls:
 
+The following are the input controls:
 Input controls are the UI elements that allow users to enter information into forms³. Some common input controls that can be added to forms are:
 
 Input Controls:-
@@ -59,3 +59,13 @@ Input Controls:-
 - CheckBox: A control that allows users to toggle a yes/no option. Some properties of this control are Checked, CheckState, AutoCheck, ThreeState, etc²⁵.
 - RadioButton: A control that allows users to select one option from a group of mutually exclusive options. Some properties of this control are Checked, AutoCheck, GroupName, TextImageRelation, etc²⁵.
 - DateTimePicker: A control that allows users to select a date and time using a graphical calendar and a spin button. Some properties of this control are Value, Format, ShowCheckBox,ShowUpDown,MinDate,MaxDate,etc²⁵.
+
+
+Question:-
+###  What is the use of Label control? List and explain at least three properties with example. 
+Answer:-
+A label control is a user interface element that displays text on a form³⁴. It can be used to provide captions, instructions, or other information to the user. Some of the properties of a label control are:
+
+- **Text**: This property sets or gets the text displayed by the label³⁴. For example, `label.Text = "This is a label control";` sets the text of the label to "This is a label control".
+- **Font**: This property sets or gets the font used by the label³⁴. For example, `label.Font = new Font("Arial", 12);` sets the font of the label to Arial with size 12.
+- **LineBreakMode**: This property sets or gets how text wrapping and truncation are handled by the label¹. For example, `label.LineBreakMode = LineBreakMode.TailTruncation;` sets the line break mode of the label to truncate text at the end with an ellipsis if it exceeds the width of the label.
