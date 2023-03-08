@@ -170,3 +170,10 @@ this.Controls.Remove(btn);
 ```
 
 This code removes the button control from the form at run time.
+
+
+
+### Practical Questions
+
+<!-- link of github/fenilsonani/gui-prorams -->
+<a href="https://github.com/fenilsonani/gui-program">Github</a>
