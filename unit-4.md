@@ -2,68 +2,8 @@
 
 ## 5 marks Questions
 
-Question 1:-
-### Explain TreeView control in detail with example. List and explain in one line at least four properties and methods with example.
-Answer:-
-A dialog box in C# is a type of window that is used to enable common communication or dialog between a computer and its user². A dialog box can be used to provide the user with the means for specifying how to implement a command or to respond to a question².
 
-Some of the common dialog boxes in C# are:
 
-- **MessageBox**: A simple dialog box that displays a message and has one or more buttons for user input⁴.
-- **OpenFileDialog**: A dialog box that allows the user to select one or more files from a folder⁴.
-- **SaveFileDialog**: A dialog box that allows the user to specify a file name and location for saving a file⁴.
-- **ColorDialog**: A dialog box that allows the user to select a color from a palette or custom colors⁴.
-- **FontDialog**: A dialog box that allows the user to choose a font, font size, style, and color⁴.
-- **PrintDialog**: A dialog box that allows the user to configure print settings and send a document to a printer⁴.
-
-Here are some examples of how to use three of these dialog boxes:
-
-- To use a MessageBox, you can call the static method MessageBox.Show() with parameters for the message text, caption, buttons, and icon. For example:
-
-```csharp
-// Show an information message with OK button
-MessageBox.Show("This is an information message.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-```
-
-- To use an OpenFileDialog, you need to create an instance of the OpenFileDialog class and set its properties such as Filter, InitialDirectory, Multiselect etc. Then you can call its ShowDialog() method to display it. You can also access its properties such as FileName or FileNames after the user closes it. For example:
-
-```csharp
-// Create an open file dialog
-OpenFileDialog openFileDialog = new OpenFileDialog();
-// Set filter for file extension and default file extension 
-openFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-// Set initial directory 
-openFileDialog.InitialDirectory = @"C:\";
-// Allow multiple selection
-openFileDialog.Multiselect = true;
-// Display open file dialog 
-if (openFileDialog.ShowDialog() == DialogResult.OK)
-{
-    // Get selected file names
-    string[] files = openFileDialog.FileNames;
-    // Do something with files
-}
-```
-
-- To use a SaveFileDialog, you need to create an instance of the SaveFileDialog class and set its properties such as Filter, InitialDirectory, FileName etc. Then you can call its ShowDialog() method to display it. You can also access its properties such as FileName after the user closes it. For example:
-
-```csharp
-// Create a save file dialog
-SaveFileDialog saveFileDialog = new SaveFileDialog();
-// Set filter for file extension and default file extension 
-saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-// Set initial directory 
-saveFileDialog.InitialDirectory = @"C:\";
-// Set default file name 
-saveFileDialog.FileName = "MyFile.txt";
-// Display save file dialog 
-if (saveFileDialog.ShowDialog() == DialogResult.OK)
-{
-    // Get selected file name
-    string fileName = saveFileDialog.FileName;
-    // Do something with fileName
-}
-```
 
 Question 2:-
 ### Explain TreeView control in detail with example. List and explain in one line at least four properties and methods with example.
